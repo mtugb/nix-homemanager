@@ -1,0 +1,6 @@
+## 入り口について
+入り口はflake.nix。nixというより、flakeモードのデフォルトで読み取られるファイル。:w
+
+## 昔はhome.tsxが入り口だった。
+昔はflakesモードが存在せず、~/.config/home-manager/home.nixが入り口
+
