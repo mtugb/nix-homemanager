@@ -26,7 +26,7 @@
     enable = true;
     viAlias = true;
     vimAlias = true;
-    extraLuaConfig = builtins.readFile ./nvim/init.lua;
+    initLua = builtins.readFile ./nvim/init.lua;
   };
   programs.tmux = {
     enable = true;
