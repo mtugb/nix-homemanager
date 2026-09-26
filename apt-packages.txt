@@ -1,9 +1,0 @@
-// grep -E "Commandline: apt(-get)? install" /var/log/apt/history.logで最近のやつなら取得可能
-inkscape
-piper
-curl
-flatpak
-gnome-software-plugin-flatpak
-xclip
-git
-

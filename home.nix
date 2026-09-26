@@ -37,7 +37,13 @@
       # optionにない設定は、ここに .tmux.conf の書き方でそのまま書ける
     '';
   };
-
+	programs.gh = {
+	  enable = true;
+	  settings = {
+	    git_protocol = "ssh";   # または "https"
+	    editor = "nvim";
+	  };
+	};
 }
 
 # neovimは色んな人が使うので、普通にhome.packagesに書く以外にも、programs.neovim = { enable = true } という入れ方ができるのだ。

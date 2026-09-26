@@ -1,6 +1,18 @@
+
+## 一番大事なこと
+設定を変更するたびに、とりあえず
+```
+git add .
+git commit
+home-manager switch
+```
+
+
 ## 入り口について
 入り口はflake.nix。nixというより、flakeモードのデフォルトで読み取られるファイル。:w
 
 ## 昔はhome.tsxが入り口だった。
 昔はflakesモードが存在せず、~/.config/home-manager/home.nixが入り口
 
+## 注意点
+nvimのinit.luaを書き換えたときもswitch必要
