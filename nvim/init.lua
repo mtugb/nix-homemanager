@@ -55,10 +55,13 @@ vim.api.nvim_create_autocmd('LspAttach', {
     end
   end,
 })
-vim.api.nvim_create_autocmd('FileType', {   -- どのイベントで
-  pattern = 'lua',                          -- どの対象のときに
-  callback = function()                     -- 何をするか
+vim.api.nvim_create_autocmd('FileType', { -- どのイベントで
+  pattern = 'lua',                        -- どの対象のときに
+  callback = function()                   -- 何をするか
     vim.bo.shiftwidth = 2
+    vim.bo.expandtab = true
+    vim.bo.tabstop = 2
+    vim.bo.softtabstop = 2
   end,
 })
 
